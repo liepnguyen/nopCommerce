@@ -58,6 +58,11 @@ namespace Nop.Core.Domain.Directory
         /// Gets or sets the date and time of instance update
         /// </summary>
         public DateTime UpdatedOnUtc { get; set; }
+
+        /// <summary>
+        /// Gets or sets the rounding type
+        /// </summary>
+        public int RoundingType { get; set; }
     }
 
 }

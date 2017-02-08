@@ -61,6 +61,10 @@ namespace Nop.Admin.Models.Directory
         [UIHint("MultiSelect")]
         public IList<int> SelectedStoreIds { get; set; }
         public IList<SelectListItem> AvailableStores { get; set; }
+
+        [NopResourceDisplayName("Admin.Configuration.Currencies.Fields.RoundingType")]
+        public int RoundingType { get; set; }
+        public IList<SelectListItem> AvailableRoundingTypes { get; set; }
     }
 
     public partial class CurrencyLocalizedModel : ILocalizedModelLocal

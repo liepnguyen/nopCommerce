@@ -6,6 +6,8 @@ using Nop.Admin.Extensions;
 using Nop.Admin.Models.Directory;
 using Nop.Core;
 using Nop.Core.Domain.Directory;
+using Nop.Services;
+using Nop.Services.Catalog;
 using Nop.Services.Configuration;
 using Nop.Services.Directory;
 using Nop.Services.Helpers;
@@ -257,6 +259,7 @@ namespace Nop.Admin.Controllers
             //default values
             model.Published = true;
             model.Rate = 1;
+            model.AvailableRoundingTypes = RoundingType.Rounding001.ToSelectList().ToList();
             return View(model);
         }
 
@@ -309,6 +312,7 @@ namespace Nop.Admin.Controllers
                 return RedirectToAction("List");
 
             var model = currency.ToModel();
+            model.AvailableRoundingTypes = RoundingType.Rounding001.ToSelectList().ToList();
             model.CreatedOn = _dateTimeHelper.ConvertToUserTime(currency.CreatedOnUtc, DateTimeKind.Utc);
             //locales
             AddLocales(_languageService, model.Locales, (locale, languageId) =>

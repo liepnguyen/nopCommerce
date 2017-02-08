@@ -198,6 +198,7 @@
     <Compile Include="Catalog\ProductTagService.cs" />
     <Compile Include="Catalog\IRecentlyViewedProductsService.cs" />
     <Compile Include="Catalog\RecentlyViewedProductsService.cs" />
+    <Compile Include="Catalog\RoundingType.cs" />
     <Compile Include="Catalog\TierPriceExtensions.cs" />
     <Compile Include="Catalog\ProductExtensions.cs" />
     <Compile Include="Catalog\PriceFormatter.cs" />

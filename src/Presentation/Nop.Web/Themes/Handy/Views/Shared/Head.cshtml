@@ -2,7 +2,7 @@
 @using Nop.Core.Infrastructure
 @using Nop.Web.Framework.Themes
 @using Nop.Web.Framework.UI
-@{  
+@{
     var supportRtl = EngineContext.Current.Resolve<IWorkContext>().WorkingLanguage.Rtl;
     var themeName = EngineContext.Current.Resolve<IThemeContext>().WorkingThemeName;
 
@@ -34,9 +34,20 @@
         Html.AddScriptParts("~/Scripts/respond.min.js");
     }
 
-    //add bootstrap CSS file
-    Html.AppendCssFileParts(string.Format("~/Themes/{0}/Content/css/bootstrap-theme.min.css", themeName));
+    //add FontAwsome CSS file
+    Html.AppendCssFileParts(string.Format("~/Themes/{0}/Content/css/font-awesome.min.css", themeName));
+
+    //add Google Font CSS file
+    Html.AppendCssFileParts("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=vietnamese");
+    Html.AppendCssFileParts("https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&subset=vietnamese");
+
+    //add Owl carousel CSS file
+    Html.AppendCssFileParts(string.Format("~/Themes/{0}/Content/css/owl.carousel.min.css", themeName));
+
+    //add Bootstrap CSS file
+    //Html.AppendCssFileParts(string.Format("~/Themes/{0}/Content/css/bootstrap-theme.min.css", themeName));
     Html.AppendCssFileParts(string.Format("~/Themes/{0}/Content/css/bootstrap.min.css", themeName));
 
+    Html.AddScriptParts(string.Format("~/Themes/{0}/Content/js/owl.carousel.min.js", themeName));
     Html.AddScriptParts(string.Format("~/Themes/{0}/Content/js/bootstrap.min.js", themeName));
 }

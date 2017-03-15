@@ -600,6 +600,7 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <None Include="Properties\PublishProfiles\development.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\fineuploader\iframe.xss.response-4.2.2.js" />
     <Content Include="Scripts\fineuploader\jquery.fineuploader-4.2.2.js" />
@@ -621,11 +622,37 @@
     <Content Include="Themes\Handy\Content\css\bootstrap-theme.min.css" />
     <Content Include="Themes\Handy\Content\css\bootstrap.css" />
     <Content Include="Themes\Handy\Content\css\bootstrap.min.css" />
+    <Content Include="Themes\Handy\Content\css\font-awesome.css" />
+    <Content Include="Themes\Handy\Content\css\font-awesome.min.css" />
+    <Content Include="Themes\Handy\Content\css\owl.carousel.css" />
+    <Content Include="Themes\Handy\Content\css\owl.carousel.min.css" />
     <Content Include="Themes\Handy\Content\css\styles.css" />
+    <Content Include="Themes\Handy\Content\fonts\fontawesome-webfont.svg" />
     <Content Include="Themes\Handy\Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Themes\Handy\Content\js\bootstrap.js" />
     <Content Include="Themes\Handy\Content\js\bootstrap.min.js" />
+    <Content Include="Themes\Handy\Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Themes\Handy\Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Themes\Handy\Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Themes\Handy\Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Themes\Handy\Content\fonts\FontAwesome.otf" />
+    <Content Include="Themes\Handy\Content\js\owl.carousel.js" />
+    <Content Include="Themes\Handy\Content\js\owl.carousel.min.js" />
+    <None Include="Themes\Handy\Content\sass\global.scss" />
+    <Content Include="Themes\Handy\Content\sass\bootstrap-override.scss" />
     <None Include="Themes\Handy\Content\sass\styles.scss" />
+    <Content Include="Themes\Handy\Content\sass\styles - Copy - Copy.css">
+      <DependentUpon>bootstrap-override.scss</DependentUpon>
+    </Content>
+    <Content Include="Themes\Handy\Content\sass\styles - Copy.css">
+      <DependentUpon>global.scss</DependentUpon>
+    </Content>
+    <Content Include="Themes\Handy\Content\sass\styles - Copy.min - Copy.css">
+      <DependentUpon>styles - Copy - Copy.css</DependentUpon>
+    </Content>
+    <Content Include="Themes\Handy\Content\sass\styles - Copy.min.css">
+      <DependentUpon>styles - Copy.css</DependentUpon>
+    </Content>
     <Content Include="Themes\Handy\Content\sass\styles.css">
       <DependentUpon>styles.scss</DependentUpon>
     </Content>
@@ -1168,10 +1195,36 @@
     <Content Include="Themes\Handy\Views\Shared\Header.cshtml" />
     <Content Include="Themes\Handy\Views\Common\HeaderLinks.cshtml" />
     <Content Include="Themes\Handy\Views\Common\Logo.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\SearchBox.cshtml" />
+    <Content Include="Themes\Handy\Views\Shared\_ColumnsTwo.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\CategoryNavigation.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\CategoryTemplate.ProductsInGridOrLines.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\_ProductBreadcrumb.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\ManufacturerNavigation.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\PopularProductTags.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\RecentlyViewedProductsBlock.cshtml" />
+    <Content Include="Themes\Handy\Views\Shared\_ProductBox.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\_CatalogSelectors.cshtml" />
+    <Content Include="Themes\Handy\Views\Common\Footer.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\HomepageCategories.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\HomepageProducts.cshtml" />
+    <Content Include="Themes\Handy\Views\News\HomePageNews.cshtml" />
+    <Content Include="Themes\Handy\Views\Home\Index.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\HomepageBestSellers.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\RelatedProducts.cshtml" />
+    <Content Include="Themes\Handy\Views\Shared\_ColumnsTwo2.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\ProductTemplate.Simple.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\_ProductDetailsPictures.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\_AddToCart.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\ProductsAlsoPurchased.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\_ProductSpecifications.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\_ProductTierPrices.cshtml" />
+    <Content Include="Themes\Handy\Views\Product\_ProductAttributes.cshtml" />
+    <Content Include="Themes\Handy\Views\Customer\Login.cshtml" />
+    <Content Include="Themes\Handy\Views\Catalog\ProductsByTag.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Plugins\bin\" />
-    <Folder Include="Themes\Handy\Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Libraries\Nop.Core\Nop.Core.csproj">

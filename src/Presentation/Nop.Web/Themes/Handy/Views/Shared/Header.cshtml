@@ -17,6 +17,32 @@
                         <div class="search-box">
                             @Html.Action("SearchBox", "Catalog")
                         </div>
+                        <div class="header-text-widget hidden-xs">
+                            <div class="widget-description">
+                                <i class="fa fa-phone"></i>
+                                <span class="text-1">Online Consultation</span>
+                                <span class="text-2">Call: + 0123 456 789</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-menu-wrapper">
+            <div class="container">
+                <div class="horizontal-menu dropdown-fix">
+                    <div class="sidemenu-holder">
+                        <div class="navigation">
+                            <nav class="navbar">
+                                <div class="collapse navbar-collapse">
+                                    <ul class="main-nav">
+                                        <li class=""><a href="/"><span>Home</span></a></li>
+                                        <li class=""><a href="/"><span>Shop</span></a></li>
+                                        <li><a href="@Url.RouteUrl("Blog")"><span>@T("Blog")</span></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>

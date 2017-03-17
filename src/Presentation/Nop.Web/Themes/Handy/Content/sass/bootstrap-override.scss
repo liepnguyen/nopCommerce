@@ -26,6 +26,11 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     vertical-align: middle;
 }
 
+input[type="checkbox"], input[type="radio"], input[type="checkbox"] + *, input[type="radio"] + * {
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
 /* BUTTONS */
 .btn-default {
     background: #c2d44e;
@@ -103,7 +108,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .ckbox label, .rdio label {
   padding-left: 10px;
   cursor: pointer;
-  margin-bottom: 7px !important;
+  /*margin-bottom: 7px !important;*/
 }
 
 .ckbox {

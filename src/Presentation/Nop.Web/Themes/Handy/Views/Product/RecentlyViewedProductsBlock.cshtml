@@ -2,10 +2,9 @@
 @using Nop.Web.Models.Catalog;
 @if (Model.Count > 0)
 {
-    <div class="sb-recently-viewed-products hidden-sm hidden-xs">
-        <div class="sb-widget">
-            <h4 class="sb-title">@T("Products.RecentlyViewedProducts")</h4>
-            <div id="recently-viewed-products-carousel" class="owl-carousel">
+    <div class="block recently-viewed-products hidden-sm hidden-xs">
+        <h4 class="title">@T("Products.RecentlyViewedProducts")</h4>
+        <div id="recently-viewed-products-carousel" class="owl-carousel">
             @for (int i = 0; i < Model.Count; i++)
             {
                 var product = Model[i];
@@ -23,7 +22,6 @@
                     </div>
                 </div>
             }
-            </div>
         </div>
     </div>
 

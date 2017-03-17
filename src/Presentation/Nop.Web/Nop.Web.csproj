@@ -1197,14 +1197,10 @@
     <Content Include="Themes\Handy\Views\Common\Logo.cshtml" />
     <Content Include="Themes\Handy\Views\Catalog\SearchBox.cshtml" />
     <Content Include="Themes\Handy\Views\Shared\_ColumnsTwo.cshtml" />
-    <Content Include="Themes\Handy\Views\Catalog\CategoryNavigation.cshtml" />
     <Content Include="Themes\Handy\Views\Catalog\CategoryTemplate.ProductsInGridOrLines.cshtml" />
     <Content Include="Themes\Handy\Views\Product\_ProductBreadcrumb.cshtml" />
-    <Content Include="Themes\Handy\Views\Catalog\ManufacturerNavigation.cshtml" />
-    <Content Include="Themes\Handy\Views\Catalog\PopularProductTags.cshtml" />
     <Content Include="Themes\Handy\Views\Product\RecentlyViewedProductsBlock.cshtml" />
     <Content Include="Themes\Handy\Views\Shared\_ProductBox.cshtml" />
-    <Content Include="Themes\Handy\Views\Catalog\_CatalogSelectors.cshtml" />
     <Content Include="Themes\Handy\Views\Common\Footer.cshtml" />
     <Content Include="Themes\Handy\Views\Catalog\HomepageCategories.cshtml" />
     <Content Include="Themes\Handy\Views\Product\HomepageProducts.cshtml" />
@@ -1215,13 +1211,18 @@
     <Content Include="Themes\Handy\Views\Shared\_ColumnsTwo2.cshtml" />
     <Content Include="Themes\Handy\Views\Product\ProductTemplate.Simple.cshtml" />
     <Content Include="Themes\Handy\Views\Product\_ProductDetailsPictures.cshtml" />
-    <Content Include="Themes\Handy\Views\Product\_AddToCart.cshtml" />
     <Content Include="Themes\Handy\Views\Product\ProductsAlsoPurchased.cshtml" />
     <Content Include="Themes\Handy\Views\Product\_ProductSpecifications.cshtml" />
     <Content Include="Themes\Handy\Views\Product\_ProductTierPrices.cshtml" />
     <Content Include="Themes\Handy\Views\Product\_ProductAttributes.cshtml" />
     <Content Include="Themes\Handy\Views\Customer\Login.cshtml" />
     <Content Include="Themes\Handy\Views\Catalog\ProductsByTag.cshtml" />
+    <Content Include="Themes\Handy\Views\Shared\_ColumnsOne.cshtml" />
+    <Content Include="Themes\Handy\Views\Customer\Info.cshtml" />
+    <Content Include="Themes\Handy\Views\Customer\CustomerNavigation.cshtml" />
+    <Content Include="Themes\Handy\Views\Customer\Addresses.cshtml" />
+    <Content Include="Themes\Handy\Views\Shared\_CreateOrUpdateAddress.cshtml" />
+    <Content Include="Themes\Handy\Views\Customer\ChangePassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Plugins\bin\" />

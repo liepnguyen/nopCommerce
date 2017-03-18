@@ -174,12 +174,15 @@ ul {
 }
 
 .master-column-wrapper {
-    .sidebar, .center-2 {
+    .sidebar, .center-2, .center-1 {
         margin-top: 30px;
     }
 
     .center-1, .center-2 {
         margin-bottom: 50px;
+        display: block;
+        float: left;
+        width: 100%;
     }
 }
 
@@ -412,6 +415,16 @@ ul {
     .buttons {
         text-align: right;
         margin-right: -5px;
+    }
+}
+
+.registration-page {
+    .buttons {
+        text-align: right;
+
+        .register-next-step-button {
+            margin-right: -5px;
+        }
     }
 }
 
@@ -1389,7 +1402,6 @@ ul {
 .customer-blocks {
     .new-wrapper,
     .returning-wrapper {
-        max-width: 345px;
         margin: 0 auto 40px auto;
         padding: 15px;
         border: 1px solid #f0f0f0;
@@ -1397,39 +1409,35 @@ ul {
         .title {
             margin-bottom: 15px;
             font-size: 1.5em;
+            border: none;
 
             > strong {
                 font-weight: 300;
             }
         }
 
-        .buttons > input {
-            width: 100%;
+        .buttons {
+            text-align: right;
         }
     }
 
     .checkout-as-guest-or-register-block {
         .buttons > input {
-            width: calc(50% - 2px);
+            /*width: calc(50% - 2px);*/
         }
     }
 
     .returning-wrapper {
         .form-fields {
             .inputs {
-                margin-bottom: 15px;
-
-                input[type="text"], input[type="password"] {
-                    display: block;
-                    width: 100%;
-                }
+                
             }
         }
     }
 
     .new-wrapper {
         .text {
-            height: 182px;
+            height: 123px;
             margin-bottom: 15px;
         }
     }
@@ -1465,10 +1473,6 @@ ul {
             font-size: 2em;
             font-weight: 300;
         }
-    }
-
-    .topic-block-body {
-        text-align: center;
     }
 }
 
@@ -1511,7 +1515,7 @@ ul {
     }
 
     .form-fields {
-        margin-bottom: 40px;
+        /*margin-bottom: 40px;*/
 
         .text-box {
             width: calc(100% - 10px);
@@ -1520,6 +1524,8 @@ ul {
 }
 
 .gender {
+    padding: 6px 0 0 0;
+
     span {
         margin: 0 15px 0 0;
     }

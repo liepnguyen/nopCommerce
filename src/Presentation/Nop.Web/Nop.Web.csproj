@@ -1223,6 +1223,8 @@
     <Content Include="Themes\Handy\Views\Customer\Addresses.cshtml" />
     <Content Include="Themes\Handy\Views\Shared\_CreateOrUpdateAddress.cshtml" />
     <Content Include="Themes\Handy\Views\Customer\ChangePassword.cshtml" />
+    <Content Include="Themes\Handy\Views\Customer\DownloadableProducts.cshtml" />
+    <Content Include="Themes\Handy\Views\Customer\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Plugins\bin\" />

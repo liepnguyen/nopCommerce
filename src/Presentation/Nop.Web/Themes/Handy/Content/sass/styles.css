@@ -383,11 +383,14 @@ ul {
           font-size: 14px;
           color: #898e91; }
 
-.master-column-wrapper .sidebar, .master-column-wrapper .center-2 {
+.master-column-wrapper .sidebar, .master-column-wrapper .center-2, .master-column-wrapper .center-1 {
   margin-top: 30px; }
 
 .master-column-wrapper .center-1, .master-column-wrapper .center-2 {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  display: block;
+  float: left;
+  width: 100%; }
 
 .navigation .navbar .navbar-collapse .main-nav {
   position: static;
@@ -541,6 +544,11 @@ ul {
 .change-password-page .buttons {
   text-align: right;
   margin-right: -5px; }
+
+.registration-page .buttons {
+  text-align: right; }
+  .registration-page .buttons .register-next-step-button {
+    margin-right: -5px; }
 
 #recently-viewed-products-carousel .product-wrapper {
   position: relative;
@@ -1164,32 +1172,26 @@ ul {
 
 .customer-blocks .new-wrapper,
 .customer-blocks .returning-wrapper {
-  max-width: 345px;
   margin: 0 auto 40px auto;
   padding: 15px;
   border: 1px solid #f0f0f0; }
   .customer-blocks .new-wrapper .title,
   .customer-blocks .returning-wrapper .title {
     margin-bottom: 15px;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    border: none; }
     .customer-blocks .new-wrapper .title > strong,
     .customer-blocks .returning-wrapper .title > strong {
       font-weight: 300; }
-  .customer-blocks .new-wrapper .buttons > input,
-  .customer-blocks .returning-wrapper .buttons > input {
-    width: 100%; }
+  .customer-blocks .new-wrapper .buttons,
+  .customer-blocks .returning-wrapper .buttons {
+    text-align: right; }
 
 .customer-blocks .checkout-as-guest-or-register-block .buttons > input {
-  width: calc(50% - 2px); }
-
-.customer-blocks .returning-wrapper .form-fields .inputs {
-  margin-bottom: 15px; }
-  .customer-blocks .returning-wrapper .form-fields .inputs input[type="text"], .customer-blocks .returning-wrapper .form-fields .inputs input[type="password"] {
-    display: block;
-    width: 100%; }
+  /*width: calc(50% - 2px);*/ }
 
 .customer-blocks .new-wrapper .text {
-  height: 182px;
+  height: 123px;
   margin-bottom: 15px; }
 
 .external-authentication {
@@ -1214,8 +1216,6 @@ ul {
     .topic-block .topic-block-title h2 {
       font-size: 2em;
       font-weight: 300; }
-  .topic-block .topic-block-body {
-    text-align: center; }
 
 .topic-password {
   text-align: center;
@@ -1244,10 +1244,12 @@ ul {
     font-weight: 300; }
 
 .fieldset .form-fields {
-  margin-bottom: 40px; }
+  /*margin-bottom: 40px;*/ }
   .fieldset .form-fields .text-box {
     width: calc(100% - 10px); }
 
-.gender span {
-  margin: 0 15px 0 0; }
+.gender {
+  padding: 6px 0 0 0; }
+  .gender span {
+    margin: 0 15px 0 0; }
 

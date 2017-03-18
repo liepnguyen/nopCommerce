@@ -66,15 +66,17 @@
                     {
                         <div class="form-group">
                             <label class="col-sm-3 control-label">@T("Account.Fields.Gender"):</label>
-                            <div class="gender col-sm-5">
-                                <span class="male rdio rdio-primary">
-                                    @Html.RadioButton("Gender", "M", (Model.Gender == "M"), new { id = "gender-male"})
-                                    <label class="forcheckbox" for="gender-male">@T("Account.Fields.Gender.Male")</label>
-                                </span>
-                                <span class="female rdio rdio-primary">
-                                    @Html.RadioButton("Gender", "F", (Model.Gender == "F"), new { id = "gender-female" })
-                                    <label class="forcheckbox" for="gender-female">@T("Account.Fields.Gender.Female")</label>
-                                </span>
+                            <div class="col-sm-5">
+                                <div class="gender">
+                                    <span class="male rdio rdio-primary">
+                                        @Html.RadioButton("Gender", "M", (Model.Gender == "M"), new { id = "gender-male" })
+                                        <label class="forcheckbox" for="gender-male">@T("Account.Fields.Gender.Male")</label>
+                                    </span>
+                                    <span class="female rdio rdio-primary">
+                                        @Html.RadioButton("Gender", "F", (Model.Gender == "F"), new { id = "gender-female" })
+                                        <label class="forcheckbox" for="gender-female">@T("Account.Fields.Gender.Female")</label>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     }

@@ -1502,6 +1502,26 @@ ul {
     }
 }
 
+.order-summary-content {
+    label.td-title {
+        display: none;
+    }
+
+    .product-unit-price, .product-subtotal {
+        font-size: 26px;
+        font-weight: 400;
+        color: #b1b1b1;
+    }
+
+    .product-subtotal {
+        color: #c2d44e;
+    }
+
+    .qty-input {
+        width: 110px;
+    }
+}
+
 /* FORMS */
 .fieldset {
     .title {
@@ -1529,6 +1549,18 @@ ul {
     span {
         margin: 0 15px 0 0;
     }
+}
+
+.message-error, 
+.field-validation-error, 
+.username-not-available-status, 
+.poll-vote-error, 
+.password-error {
+    display: block;
+    /*text-align: center;*/
+    font-size: 13px;
+    color: #e4434b;
+    margin-top: 5px;
 }
 
 

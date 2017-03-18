@@ -1225,6 +1225,7 @@
     <Content Include="Themes\Handy\Views\Customer\ChangePassword.cshtml" />
     <Content Include="Themes\Handy\Views\Customer\DownloadableProducts.cshtml" />
     <Content Include="Themes\Handy\Views\Customer\Register.cshtml" />
+    <Content Include="Themes\Handy\Views\ShoppingCart\OrderSummary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Plugins\bin\" />

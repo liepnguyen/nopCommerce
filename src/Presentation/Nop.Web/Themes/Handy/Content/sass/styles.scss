@@ -16,7 +16,7 @@ ul {
     list-style: disc inside none;
 }
 
-.button-1 {
+.button-1, .button-2 {
     background: #c2d44e;
     background-image: none;
     border: 1px solid transparent;
@@ -733,6 +733,62 @@ ul {
         .full-description {
             margin-top: 65px;
         }
+    }
+}
+
+.order-summary-content {
+    .coupon-box, .giftcard-box, .estimate-shipping {
+        margin-bottom: 30px;
+
+        .title {
+            font-size: 1.5em;
+
+            > strong {
+                font-weight: 300;
+            }
+        }
+    }
+
+    .apply-discount-coupon-code-button,
+    .apply-gift-card-coupon-code-button,
+    .estimate-shipping-button,
+    .checkout-button {
+        min-width: 135px;
+        text-transform: uppercase;
+    }
+
+    .estimate-shipping {
+        select, input[type="text"] {
+            width: calc(100% - 10px);
+        }
+    }
+
+    .hint {
+        margin: 0 0 10px;
+        color: #777;
+    }
+
+    .cart-options {
+        margin-bottom: 30px;
+
+        .selected-checkout-attributes {
+            margin-top: 62px;
+            text-align: right;
+        }
+    }
+
+    .total-info {
+        th, td {
+            padding: 10px;
+        }
+
+        .checkout-buttons {
+            margin-top: 20px;
+        }
+    }
+
+    .terms-of-service {
+        margin: 15px 0 30px 0;
     }
 }
 
@@ -1561,6 +1617,68 @@ ul {
     font-size: 13px;
     color: #e4434b;
     margin-top: 5px;
+}
+
+/* SHOPPING CART */
+.cart {
+    margin-bottom: 50px;
+    width: 100%;
+    overflow-x: auto
+}
+
+table.cart {
+    width: 100%
+}
+
+table.cart th {
+    padding: 9px 12px
+}
+
+table.cart td {
+    position: relative
+}
+
+table.cart td.item-image {
+    max-width: 195px;
+    text-align: left
+}
+
+table.cart td.item-title li.image {
+    margin-bottom: 0;
+    margin-right: 10px;
+    float: left
+}
+
+table.cart td.item-title .item-variant {
+    margin: 10px 0 0
+}
+
+table.cart td.item-title li.link {
+    display: block;
+    overflow: hidden;
+    padding-top: 42px
+}
+
+table.cart td.item-title li.link .product-name {
+    text-transform: uppercase
+}
+
+table.cart td.item-title li.link .variant_title {
+    display: none
+}
+
+table.cart td.cart-action {
+    border-bottom: none
+}
+
+table.cart td.item-image a {
+    display: block;
+    border: 1px solid #f9fafb
+}
+
+table.cart tr:last-child td {
+    background: #f8f8f8;
+    text-align: right
 }
 
 

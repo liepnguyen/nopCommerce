@@ -1226,6 +1226,8 @@
     <Content Include="Themes\Handy\Views\Customer\DownloadableProducts.cshtml" />
     <Content Include="Themes\Handy\Views\Customer\Register.cshtml" />
     <Content Include="Themes\Handy\Views\ShoppingCart\OrderSummary.cshtml" />
+    <Content Include="Themes\Handy\Views\ShoppingCart\EstimateShipping.cshtml" />
+    <Content Include="Themes\Handy\Views\ShoppingCart\OrderTotals.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Plugins\bin\" />
